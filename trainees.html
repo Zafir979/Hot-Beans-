@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trainee Developers - Hot Beans Web</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background-color: #333;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      color: white;
+      z-index: 100;
+    }
+
+    .logo {
+      font-weight: bold;
+    }
+
+    .nav-buttons button {
+      background: none;
+      border: none;
+      color: white;
+      margin-left: 1rem;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .nav-buttons button:hover {
+      color: #f0c000;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #e0e0e0;
+    }
+
+    header h1 {
+      text-align: center;
+      margin-top: 0;
+      color: #333;
+    }
+
+    .profiles {
+      padding: 2rem;
+      text-align: center;
+      background-color: #f9f9f9;
+    }
+
+    .profiles h2 {
+      margin-bottom: 2rem;
+    }
+
+    .profile-card {
+      display: inline-block;
+      width: 250px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin: 1rem;
+      padding: 1rem;
+      transition: transform 0.3s;
+    }
+
+    .profile-card:hover {
+      transform: scale(1.05);
+    }
+
+    .profile-card img {
+      width: 100%;
+      border-radius: 50%;
+      max-width: 150px;
+    }
+
+    .profile-card h3 {
+      margin: 0.8rem 0 0.5rem;
+    }
+
+    .profile-card p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .roles {
+      padding: 2rem;
+      background-color: white;
+      text-align: center;
+    }
+
+    .role-card {
+      display: inline-block;
+      width: 250px;
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin: 1rem;
+      padding: 1.5rem;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .role-card i {
+      font-size: 2rem;
+      color: #007acc;
+      margin-bottom: 1rem;
+    }
+
+    .role-card h3 {
+      margin: 0.5rem 0;
+    }
+
+    .role-card ul {
+      padding-left: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    .learning {
+      padding: 2rem;
+      background-color: #f9f9f9;
+      text-align: center;
+    }
+
+    .learning h2 {
+      margin-bottom: 2rem;
+    }
+
+    .learning-icons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .learning-icon {
+      display: inline-block;
+      width: 120px;
+      margin: 1rem;
+      text-align: center;
+    }
+
+    .learning-icon i {
+      font-size: 2.5rem;
+      color: #007acc;
+      margin-bottom: 0.5rem;
+    }
+
+    .learning-icon h3 {
+      font-size: 1rem;
+      margin: 0.5rem 0;
+    }
+
+    .learning-icon a {
+      color: #007acc;
+      text-decoration: none;
+    }
+
+    .learning-icon a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        padding: 1rem;
+      }
+      
+      .nav-buttons {
+        margin-top: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">Hot Beans Web</div>
+    <div class="nav-buttons">
+      <button onclick="location.href='index.html'">Home</button>
+      <button onclick="location.href='trainees.html'">Trainees</button>
+      <button onclick="location.href='jobs.html'">Jobs</button>
+      <button onclick="location.href='apply.html'">Apply</button>
+      <button onclick="location.href='courses.html'">Courses</button>
+    </div>
+  </nav>
+
+  <header>
+    <h1>Our Trainee Developers</h1>
+  </header>
+
+  <section class="profiles">
+    <h2>Meet Our Trainees</h2>
+
+    <div class="profile-card">
+      <img src="images/aiony-haust-3TLl_97HNJo-unsplash.jpg" alt="Jane Smith">
+      <h3>Jane Smith</h3>
+      <p>Front-end Developer passionate about user experience and design.</p>
+    </div>
+
+    <div class="profile-card">
+      <img src="images/ludovic-migneault-4uj3iZ5m084-unsplash.jpg" alt="John Doe">
+      <h3>John Doe</h3>
+      <p>Back-end Developer skilled in Node.js, databases, and cloud services.</p>
+    </div>
+
+    <div class="profile-card">
+      <img src="images/christina-wocintechchat-com-0Zx1bDv5BNY-unsplash.jpg" alt="Sarah Johnson">
+      <h3>Sarah Johnson</h3>
+      <p>Full-Stack Developer working on both client and server-side applications.</p>
+    </div>
+  </section>
+
+  <section class="roles">
+    <h2>What Web Developers Do</h2>
+
+    <div class="role-card">
+      <i class="fas fa-laptop-code"></i>
+      <h3>Front-End Developer</h3>
+      <p>Creates the visual parts of websites that users interact with.</p>
+      <ul>
+        <li>Building with HTML, CSS, JavaScript</li>
+        <li>Creating responsive designs</li>
+        <li>Implementing UI/UX designs</li>
+      </ul>
+    </div>
+
+    <div class="role-card">
+      <i class="fas fa-server"></i>
+      <h3>Back-End Developer</h3>
+      <p>Builds the technology that powers websites.</p>
+      <ul>
+        <li>Creating server-side logic</li>
+        <li>Designing databases</li>
+        <li>Building APIs and applications</li>
+      </ul>
+    </div>
+
+    <div class="role-card">
+      <i class="fas fa-code-branch"></i>
+      <h3>Full-Stack Developer</h3>
+      <p>Works on both client and server sides.</p>
+      <ul>
+        <li>Developing complete applications</li>
+        <li>Understanding all web technologies</li>
+        <li>Creating end-to-end solutions</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="learning">
+    <h2>Where to Learn Web Development</h2>
+    
+    <div class="learning-icons">
+      <div class="learning-icon">
+        <i class="fab fa-free-code-camp"></i>
+        <h3>freeCodeCamp</h3>
+        <a href="https://www.freecodecamp.org/" target="_blank">Learn More</a>
+      </div>
+      
+      <div class="learning-icon">
+        <i class="fab fa-youtube"></i>
+        <h3>YouTube Tutorials</h3>
+        <a href="https://www.youtube.com/results?search_query=web+development+tutorial" target="_blank">Watch Now</a>
+      </div>
+      
+      <div class="learning-icon">
+        <i class="fas fa-graduation-cap"></i>
+        <h3>Udemy</h3>
+        <a href="https://www.udemy.com/topic/web-development/" target="_blank">Take Courses</a>
+      </div>
+      
+      <div class="learning-icon">
+        <i class="fas fa-book"></i>
+        <h3>MDN Web Docs</h3>
+        <a href="https://developer.mozilla.org/" target="_blank">Read Docs</a>
+      </div>
+      
+      <div class="learning-icon">
+        <i class="fab fa-github"></i>
+        <h3>GitHub</h3>
+        <a href="https://github.com/topics/web-development" target="_blank">Explore</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Hot Beans Web. All rights reserved.</p>
+  </footer>
+</body>
+</html>

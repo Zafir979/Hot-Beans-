@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Development Courses</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+
+    nav {
+      background-color: #333;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+
+    .logo {
+      font-weight: bold;
+    }
+
+    .nav-buttons button {
+      background: none;
+      border: none;
+      color: white;
+      margin-left: 1rem;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .nav-buttons button:hover {
+      color: #f0c000;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #e0e0e0;
+    }
+
+    header h1 {
+      margin: 0;
+      color: #333;
+    }
+
+    section {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    section ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    section li {
+      background: white;
+      margin: 1rem auto;
+      padding: 1rem;
+      max-width: 500px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    section a {
+      text-decoration: none;
+      color: #007acc;
+      font-weight: bold;
+    }
+
+    section a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">Hot Beans Web</div>
+    <div class="nav-buttons">
+      <button onclick="location.href='index.html'">Home</button>
+      <button onclick="location.href='trainees.html'">Trainees</button>
+      <button onclick="location.href='jobs.html'">Jobs</button>
+      <button onclick="location.href='apply.html'">Apply</button>
+      <button onclick="location.href='courses.html'">Courses</button>
+    </div>
+  </nav>
+
+  <header>
+    <h1>Learn Web Development</h1>
+    <p>Here are some useful resources to boost your coding skills.</p>
+  </header>
+
+  <section>
+    <ul>
+      <li><a href="https://www.codecademy.com/catalog/subject/web-development" target="_blank">Codecademy - Web Development Courses</a></li>
+      <li><a href="https://www.freecodecamp.org/learn/" target="_blank">freeCodeCamp - Full Stack Development</a></li>
+      <li><a href="https://developer.mozilla.org/en-US/" target="_blank">MDN Web Docs - Learn Web Development</a></li>
+    </ul>
+  </section>
+</body>
+</html>
